@@ -54,11 +54,11 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .logo img {
-    width: 40px;
+    width: 70px;
     margin-right: 10px;
 }
 
