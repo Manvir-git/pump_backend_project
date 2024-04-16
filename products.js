@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sample pump data (replace with your own pump information)
     const pumps = [
-        { name: 'V-50 feet Per Stage Borewell Submersible Pumps', image: 'images/a1.png',price:'MRP ₹79,000.00',dis:'Agricultural Submersible Pumps',link:'a1.html' },
-        { name: 'V-5 Stainless Steel Borewell Submersible Pumps', image: 'images/a2.png',price:'MRP ₹67,400.00',dis:'Agricultural Submersible Pumps',link:'a2.html' },
-        { name: 'Janta Series Borewell Submersible Pumps', image: 'images/a3.png',price:'MRP ₹66,575.00',dis:'Agricultural Submersible Pumps',link:'a3.html' },
-        { name: 'V-4 Stainless Steel Pumps', image: 'images/a4.png',price:'MRP ₹61,300.00',dis:'Agricultural Submersible Pumps',link:'a4.html' },
-        { name: 'V-6 Water Filled Borewell Submersible Pumps', image: 'images/a5.png',price:'MRP ₹45,300.00',dis:'Agricultural Submersible Pumps',link:'a5.html' },
-        { name: 'V-5 Water filled Motor', image: 'images/v6.png',price:'MRP ₹36,925.00',dis:'Agricultural Submersible Pumps' ,link:'a6.html'},
-        { name: 'V-4 Water filled motor Submersible Pumps', image: 'images/v7.png',price:'MRP ₹35,200.00',dis:'Agricultural Submersible Pumps',link:'a7.html'},
-        {name: 'Horizontal Openwell Submersible Pumps (1.5 Hp)', image: 'images/v8.png',price:'MRP ₹21,600.00',dis:'Agricultural Submersible Pumps' ,link:'a8.html'},
+        { name: 'V-50 feet Per Stage Borewell Submersible Pumps', image: 'images/a1.png',price:'MRP ₹79,000.00',link:'a1.html' },
+        { name: 'V-5 Stainless Steel Borewell Submersible Pumps', image: 'images/a2.png',price:'MRP ₹67,400.00',link:'a2.html' },
+        { name: 'Janta Series Borewell Submersible Pumps', image: 'images/a3.png',price:'MRP ₹66,575.00',link:'a3.html' },
+        { name: 'V-4 Stainless Steel Pumps', image: 'images/a4.png',price:'MRP ₹61,300.00',link:'a4.html' },
+        { name: 'V-6 Water Filled Borewell Submersible Pumps', image: 'images/a5.png',price:'MRP ₹45,300.00',link:'a5.html' },
+        { name: 'V-5 Water filled Motor', image: 'images/v6.png',price:'MRP ₹36,925.00' ,link:'a6.html'},
+        { name: 'V-4 Water filled motor Submersible Pumps', image: 'images/v7.png',price:'MRP ₹35,200.00',link:'a7.html'},
+        {name: 'Horizontal Openwell Submersible Pumps (1.5 Hp)', image: 'images/v8.png',price:'MRP ₹21,600.00',link:'a8.html'},
         // Add more pumps as needed
     ];
 
@@ -37,9 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const pumpPrice = document.createElement('p');
             pumpPrice.textContent = 'Price: ' + pump.price;
-
-            const pumpdiscription = document.createElement('d');
-            pumpdiscription.textContent = pump.dis;
             
             
 
@@ -57,7 +54,6 @@ buyNowButton.addEventListener('click', function() {
 });
 
             pumpInfo.appendChild(pumpPrice);
-            pumpInfo.appendChild(pumpdiscription);
             pumpInfo.appendChild(buyNowButton);
             pumpItem.appendChild(pumpInfo);
             pumpGallery.appendChild(pumpItem);

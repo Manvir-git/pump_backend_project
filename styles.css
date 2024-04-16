@@ -35,7 +35,7 @@ body {
 
 /* Navigation Bar Styles */
 .navbar {
-    background-color: #333;
+    background-color: #3b3b3b;
     color: #fff;
     padding: 10px 0;
     overflow: hidden;
@@ -97,10 +97,11 @@ body {
     background-color: #f5f5f5;
     text-align: center;
     padding: 100px 0;
-        background-image:url(images/bg.jpg); 
-        background-size:auto;
-        height: 160px;
+        background-image:url(images/PUMP.jpg); 
+        background-size:cover;
+        height: 460px;
         position: relative;
+
 }
 
 
@@ -112,12 +113,12 @@ body {
 
 .header p {
     font-size: 18px;
-    color: #fdfdfd;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
 .btn {
-    margin-left: 520px;
+
     display: inline-block;
     padding: 12px 24px;
     background-color: #00aaff;
@@ -133,13 +134,24 @@ body {
 }
 
 
-
+.b{
+    background-color: #d5ffe96d;
+    font-size: 18px;
+    max-width:1240px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;    margin-left: 90px;
+}
+.b2{
+    color:#000000;
+    font-weight:normal;
+}
 
 .main-content {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #e9e9e9;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -173,7 +185,7 @@ body {
 }
 
 .pump-item:hover {
-    background-color: #c5dfec;
+    background-color: #abd3e7;
     padding: 10px;
     transform: translateY(-10px);
 }
@@ -194,7 +206,7 @@ font-size: 20px;
         font-size: 12px;
         display: inline-block;
         padding: 10px 18px;
-        background-color: #5d5d5d;
+        background-color: #b5b4b4;
         color: #fff;
         font-weight: bold;
         border-radius: 5px;
@@ -209,8 +221,8 @@ font-size: 20px;
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .contact-info {
@@ -238,10 +250,84 @@ font-size: 20px;
 }
 
 .contact-section a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
 .contact-section a:hover {
     text-decoration: underline;
+}
+
+
+.container2 {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 20px;
+    border: #000000;
+}
+
+.side-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-section {
+    flex-basis: calc(50% - 10px); /* 50% width with spacing */
+    padding: 10px;
+border-radius: 2px;
+border-color: #000000;
+    border-radius: 5px;
+}
+
+.image-container {
+    flex: 2;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h3{
+    font-weight: 100;
+
+}
+h2{
+
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+
+    margin-right: 80px;
+
+}
+
+p3{
+    text-align: center;
+    padding-left: 90px;
+}
+
+.new{
+    background-color: #d5e2fda3;
+    height: 200px;
+}
+
+.new h5{
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
 }
