@@ -185,7 +185,7 @@ body {
 }
 
 .pump-item:hover {
-    background-color: #abd3e7;
+    background-color: #ededed;
     padding: 10px;
     transform: translateY(-10px);
 }

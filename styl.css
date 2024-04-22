@@ -141,6 +141,7 @@ p1{
 }
 
 .pump-item:hover {
+    background-color: #ededed;
     padding: 10px;
     transform: translateY(-10px);
 }
