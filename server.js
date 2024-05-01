@@ -45,8 +45,7 @@ app.post("/",function(req,res){
         State:req.body.state
     });
     newNote.save();
-    res.send("thank you your order has been placed");
-    // res.redirect('/');
+    res.send("thank you ! we will gwt back to you.");
 })
 
 app.listen(3001,function(){
