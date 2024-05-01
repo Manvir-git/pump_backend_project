@@ -52,6 +52,7 @@ header {
 .product-range {
     background-color: #fff;
 	padding: 2em;
+    width: 1200px;
 }
 
 .product-range h2 {
