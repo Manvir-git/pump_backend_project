@@ -346,8 +346,9 @@ p3 {
         padding: 1rem;
     }
 
+    /* Fix grid for mobile */
     .pump-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important; /* Force single column on mobile */
     }
 
     .footer {
@@ -405,6 +406,7 @@ p3 {
         padding: 1.5rem;
     }
 
+    /* Fix grid for tablets */
     .pump-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -428,6 +430,7 @@ p3 {
         padding: 2rem;
     }
 
+    /* Fix grid for desktop */
     .pump-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
