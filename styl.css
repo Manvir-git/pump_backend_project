@@ -10,7 +10,6 @@ p1 {
 h1 {
     color: #0076b2;
     text-align: center;
-    font-size: 2.8125rem; /* 45px */
 }
 
 p2 {
@@ -24,11 +23,8 @@ h4 {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -146,7 +142,6 @@ body {
     font-weight: normal;
 }
 
-/* Main Content Styles */
 .main-content {
     max-width: 1200px;
     margin: 1.25rem auto; /* 20px */
@@ -193,6 +188,7 @@ body {
 
 .pump-item img {
     max-width: 100%;
+    height: auto;
 }
 
 .pump-item p {
@@ -327,6 +323,8 @@ p3 {
     text-align: center;
 }
 
+/* Media Queries for Responsiveness */
+
 /* Mobile (up to 480px) */
 @media (max-width: 480px) {
     .navbar .container {
@@ -349,6 +347,22 @@ p3 {
     /* Fix grid for mobile */
     .pump-gallery {
         grid-template-columns: 1fr !important; /* Force single column on mobile */
+        gap: 1rem; /* Ensure space between items */
+    }
+
+    .pump-item {
+        padding: 1rem;
+    }
+
+    .pump-item button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    /* Ensure proper image scaling */
+    .pump-item img {
+        max-width: 100%;
+        height: auto;
     }
 
     .footer {
@@ -373,16 +387,6 @@ p3 {
         margin-bottom: 1.25rem;
     }
 
-    .pump-item {
-        padding: 1rem;
-    }
-
-    .pump-item button {
-        font-size: 0.875rem;
-        padding: 0.75rem 1.25rem;
-    }
-
-    /* New Section */
     .new h5 {
         font-size: 1.8rem; /* Smaller size on mobile */
     }
