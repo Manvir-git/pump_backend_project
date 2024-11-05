@@ -98,6 +98,7 @@ header {
 
 /* Navbar Styles */
 .navbar {
+  width: 100%;
   max-width: 1400px;
   background-color: #333;
   color: #fff;
@@ -230,101 +231,104 @@ header {
 }
 
 /* Responsive Styles for Mobile & Tablet Devices */
-@media (max-width: 768px) {
+
+/* Tablets and smaller devices */
+@media (max-width: 992px) {
   .navbar .container {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-links {
-      display: flex;
-      flex-direction: column;
-      margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
 
   .nav-links li {
-      margin-right: 0;
-      margin-bottom: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   .product-range {
-      padding: 1.5em;
+    padding: 1.5em;
   }
 
   .contact-info {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-section {
-      margin: 10px 0;
-      text-align: center;
+    margin: 10px 0;
+    text-align: center;
   }
 
   .footer {
-      padding: 30px 10px;
+    padding: 30px 10px;
   }
 
   .container2 {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .content {
-      width: 100%;
+    width: 100%;
   }
 
   .z {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
+/* Phones and small tablets */
 @media (max-width: 480px) {
   .navbar .container {
-      padding: 0 10px;
+    padding: 0 10px;
   }
 
   .company-name {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .logo img {
-      width: 50px;
+    width: 50px;
   }
 
   .footer {
-      padding: 15px;
-      font-size: 14px;
+    padding: 15px;
+    font-size: 14px;
   }
 
   .product-range {
-      padding: 1.5em 10px;
+    padding: 1.5em 10px;
   }
 
   .product-range h2 {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
 
   .contact-section h2 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .contact-info {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-section {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   .container2 {
-      flex-direction: column;
-      padding: 10px;
+    flex-direction: column;
+    padding: 10px;
   }
 
   .content {
-      width: 100%;
+    width: 100%;
   }
 }

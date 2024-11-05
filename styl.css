@@ -15,8 +15,11 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container Class */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -56,10 +59,10 @@ body {
 .nav-links {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline;
     margin-right: 1.25rem; /* 20px */
 }
 
@@ -83,7 +86,7 @@ body {
     background-color: #f5f5f5;
     text-align: center;
     padding: 6.25rem 0; /* 100px */
-    background-image: url(bg.jpg); 
+    background-image: url('bg.jpg'); /* Make sure bg.jpg is the correct path */
     background-size: cover;
     background-position: center;
     height: 10rem; /* 160px */
@@ -110,10 +113,7 @@ p {
     text-align: center;
 }
 
-p1 {
-    font-size: 0.9375rem; /* 15px */
-}
-
+/* Section Title and Description */
 .section-title {
     color: #0076b2;
     font-size: 2.125rem; /* 34px */
@@ -126,6 +126,7 @@ p1 {
     margin-bottom: 3.125rem; /* 50px */
 }
 
+/* Gallery Styles */
 .pump-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -133,13 +134,12 @@ p1 {
 }
 
 .pump-item {
-    display: grid;
     background-color: #f5f5f5;
     padding: 1.25rem; /* 20px */
     border-radius: 0.9375rem; /* 15px */
     text-align: center;
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .pump-item:hover {
@@ -150,6 +150,7 @@ p1 {
 
 .pump-item img {
     max-width: 100%;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
 }
 
 .pump-item button {
@@ -159,6 +160,7 @@ p1 {
     color: #fff;
     font-weight: bold;
     border-radius: 0.3125rem; /* 5px */
+    transition: background-color 0.3s ease;
 }
 
 .pump-item button:hover {
@@ -182,6 +184,7 @@ p1 {
     color: #000000;
 }
 
+/* Contact Info Styling */
 .contact-info {
     display: flex;
     justify-content: space-around;
@@ -209,7 +212,7 @@ p1 {
 }
 
 .contact-section a {
-    color: #fff;
+    color: #0076b2;
     text-decoration: none;
 }
 
