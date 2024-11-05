@@ -1,12 +1,24 @@
 /* Reset default styles */
 p1 {
     margin: 0;
+    padding: 0;
     color: rgb(92, 92, 92);
     text-align: left;
     font-size: 0.9375rem; /* 15px */
 }
 
-h1, h4 {
+h1 {
+    color: #0076b2;
+    text-align: center;
+    font-size: 2.8125rem; /* 45px */
+}
+
+p2 {
+    color: #000000;
+    font-size: 1.125rem; /* 18px */
+}
+
+h4 {
     color: #0076b2;
 }
 
@@ -15,11 +27,8 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* Container Class */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -28,9 +37,10 @@ body {
 
 /* Navigation Bar Styles */
 .navbar {
-    background-color: #333;
+    background-color: #3b3b3b;
     color: #fff;
     padding: 0.625rem 0; /* 10px */
+    overflow: hidden;
 }
 
 .navbar .container {
@@ -43,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .logo img {
@@ -59,10 +69,10 @@ body {
 .nav-links {
     list-style: none;
     padding: 0;
-    display: flex;
 }
 
 .nav-links li {
+    display: inline;
     margin-right: 1.25rem; /* 20px */
 }
 
@@ -86,34 +96,64 @@ body {
     background-color: #f5f5f5;
     text-align: center;
     padding: 6.25rem 0; /* 100px */
-    background-image: url('bg.jpg'); /* Make sure bg.jpg is the correct path */
+    background-image: url(images/PUMP.jpg);
     background-size: cover;
-    background-position: center;
-    height: 10rem; /* 160px */
+    height: 28.75rem; /* 460px */
     position: relative;
 }
 
+.header h1 {
+    font-size: 2.8125rem; /* 45px */
+    color: #ffffff;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.header p {
+    font-size: 1.125rem; /* 18px */
+    color: #ffffff;
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3125rem; /* 5px */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0088cc;
+}
+
+.b {
+    background-color: #d5ffe96d;
+    font-size: 1.125rem; /* 18px */
+    max-width: 1240px;
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px */
+    margin-top: 1.25rem; /* 20px */
+    margin-left: 5.625rem; /* 90px */
+}
+
+.b2 {
+    color: #000000;
+    font-weight: normal;
+}
+
+/* Main Content Styles */
 .main-content {
     max-width: 1200px;
     margin: 1.25rem auto; /* 20px */
     padding: 1.25rem; /* 20px */
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0.625rem; /* 10px */
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px */
 }
 
-.main-content h2 {
-    font-size: 2.8125rem; /* 45px */
-    color: #0076b2;
-    text-align: center;
-}
-
-p {
-    font-size: 1.5rem; /* 24px */
-    text-align: center;
-}
-
-/* Section Title and Description */
 .section-title {
     color: #0076b2;
     font-size: 2.125rem; /* 34px */
@@ -134,12 +174,13 @@ p {
 }
 
 .pump-item {
+    display: grid;
     background-color: #f5f5f5;
     padding: 1.25rem; /* 20px */
     border-radius: 0.9375rem; /* 15px */
     text-align: center;
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px */
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .pump-item:hover {
@@ -150,13 +191,17 @@ p {
 
 .pump-item img {
     max-width: 100%;
-    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+.pump-item p {
+    font-size: 1.25rem; /* 20px */
 }
 
 .pump-item button {
+    font-size: 0.75rem; /* 12px */
     display: inline-block;
     padding: 0.625rem 1.125rem; /* 10px 18px */
-    background-color: #aaaaaa;
+    background-color: #b5b4b4;
     color: #fff;
     font-weight: bold;
     border-radius: 0.3125rem; /* 5px */
@@ -165,14 +210,6 @@ p {
 
 .pump-item button:hover {
     background-color: #0088cc;
-}
-
-.pump-item p {
-    font-size: 1.25rem; /* 20px */
-}
-
-.pump-item d {
-    font-size: 0.75rem; /* 12px */
 }
 
 /* Footer Styles */
@@ -184,17 +221,14 @@ p {
     color: #000000;
 }
 
-/* Contact Info Styling */
 .contact-info {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .contact-section {
     flex: 1;
     text-align: left;
-    margin-bottom: 1.25rem; /* 20px */
 }
 
 .contact-section h2 {
@@ -212,12 +246,83 @@ p {
 }
 
 .contact-section a {
-    color: #0076b2;
+    color: #000000;
     text-decoration: none;
 }
 
 .contact-section a:hover {
     text-decoration: underline;
+}
+
+/* New Section Styles */
+.container2 {
+    display: flex;
+    margin-bottom: 1.875rem; /* 30px */
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+}
+
+.content {
+    flex: 2;
+    padding: 1.25rem; /* 20px */
+}
+
+.main-section {
+    margin-bottom: 1.25rem; /* 20px */
+    border: 1px solid #000000;
+}
+
+.side-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-section {
+    flex-basis: calc(50% - 0.625rem); /* 50% width with spacing */
+    padding: 0.625rem; /* 10px */
+    border-radius: 0.3125rem; /* 5px */
+    border-color: #000000;
+}
+
+.image-container {
+    flex: 2;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 300;
+    text-align: left;
+    margin-right: 5rem; /* 80px */
+}
+
+p3 {
+    text-align: center;
+    padding-left: 5.625rem; /* 90px */
+}
+
+.new {
+    background-color: #d5e2fda3;
+    height: 12.5rem; /* 200px */
+}
+
+.new h5 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 100;
+    margin-top: 1.875rem; /* 30px */
+    text-align: center;
 }
 
 /* Media Queries for Responsiveness */
@@ -245,10 +350,6 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .pump-item {
-        padding: 1rem;
-    }
-
     .footer {
         padding: 1rem;
     }
@@ -260,6 +361,24 @@ p {
 
     .contact-section {
         text-align: center;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .side-section {
+        flex-basis: 100%;
+        margin-bottom: 1.25rem;
+    }
+
+    .pump-item {
+        padding: 1rem;
+    }
+
+    .pump-item button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
     }
 }
 
