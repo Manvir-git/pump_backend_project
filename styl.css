@@ -72,16 +72,11 @@ body {
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    grid-template-columns: 1fr; /* Default to 1 column */
 }
 
-/* Responsive Grid Layouts */
-@media (min-width: 320px) and (max-width: 767px) {
-    .pump-gallery {
-        grid-template-columns: 1fr; /* 1 column on mobile */
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Responsive Grid Layouts for Pump Gallery */
+@media (min-width: 768px) {
     .pump-gallery {
         grid-template-columns: 1fr 1fr; /* 2 columns on tablet */
     }
@@ -89,7 +84,7 @@ body {
 
 @media (min-width: 1024px) {
     .pump-gallery {
-        grid-template-columns: 1fr 1fr 1fr; /* 3 columns on laptop and larger */
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns on desktop */
     }
 }
 
@@ -99,10 +94,17 @@ body {
     flex-wrap: wrap;
     padding: 2rem;
     background-color: #f3f3f3;
+    flex-direction: row;
+    gap: 1rem;
 }
 
-.content, .image-container {
-    flex: 1 1 100%;
+.content {
+    flex: 2 1 60%; /* More space for content on desktop */
+    padding: 1rem;
+}
+
+.image-container {
+    flex: 1 1 40%; /* Less space for image on desktop */
     padding: 1rem;
 }
 
@@ -125,7 +127,7 @@ body {
     color: #333;
 }
 
-.side-section p {
+.side-section p3 {
     font-size: 1rem;
     color: #777;
 }
@@ -141,10 +143,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: space-around;
 }
 
 .contact-section {
-    flex: 1 1 100%;
+    flex: 1 1 30%;
 }
 
 .contact-section h2 {
@@ -153,13 +156,6 @@ body {
 
 .contact-section p {
     color: #ccc;
-}
-
-/* Responsive Footer */
-@media (min-width: 768px) {
-    .contact-info {
-        flex-wrap: nowrap;
-    }
 }
 
 .footer p {
@@ -178,17 +174,27 @@ img {
     max-width: 100%;
 }
 
-/* Additional Responsive Adjustments */
-@media (min-width: 768px) {
-    .content, .image-container {
-        flex: 1;
+/* Responsive Adjustments for Mobile */
+@media (max-width: 767px) {
+    .pump-gallery {
+        grid-template-columns: 1fr; /* 1 column on mobile */
     }
 
-    .side-sections {
-        justify-content: space-around;
+    .container2 {
+        flex-direction: column; /* Stacks elements in one column on mobile */
+    }
+
+    .content, .image-container {
+        flex: 1 1 100%; /* Full width on mobile */
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-section {
-        flex: 1;
+        flex: 1 1 100%;
+        text-align: center;
     }
 }
